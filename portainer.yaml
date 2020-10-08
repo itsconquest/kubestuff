@@ -106,7 +106,7 @@ spec:
          - name: "data"
            persistentVolumeClaim:
              claimName: portainer      
-    containers:
+      containers:
         - name: portainer
           image: "portainerci/portainer-ee:pr25-linux-amd64"
           imagePullPolicy: IfNotPresent
@@ -131,5 +131,5 @@ spec:
               port: 9000
           resources:
             {}
-    imagePullSecrets:
-      - name: wconquestdockerhubcreds
+      imagePullSecrets:
+        - name: wconquestdockerhubcreds
