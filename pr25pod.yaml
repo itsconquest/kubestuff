@@ -7,7 +7,8 @@ spec:
   containers:
   - name: pr25
     image: portainerci/portainer-ee:pr25-linux-amd64
+    ports:
+    - containerPort: 9000
   imagePullSecrets:
   - name: wconquestdockercreds
-  ports:
-    - containerPort: 9000
+  
